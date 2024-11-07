@@ -1,51 +1,30 @@
 body {
-    margin: 0;
+    margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+.First-header {
     background-color: #2593C2;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width:100%;
+    position: relative;
 }
 
-header .logo img {
-    height: 75px;
+.First-header .logo img {
+    height:50px;
     width: auto;
 }
 
-header .logo.center img {
-    display: flex;
-    justify-content: center;
+.First-header .logo.center img {
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%);
+    
 }
 
-header .searchbar {
-    display: flex;
-    justify-content: flex-end;
-}
-
-header .searchbar input {
-    padding: 8px;
-    font-size: 1em;
-    border: none;
-    border-radius: 50px;
-    margin-right: 10px;
-}
-
-header .searchbar button {
-    padding: 8px 15px;
-    background-color: #ffd700;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-}
-
-header .searchbar button:hover {
-    background-color: #f1c40f;
-}
 
 .secondary-header {
     background-color: white;
@@ -61,7 +40,6 @@ header .searchbar button:hover {
 
 .secondary-header nav ul {
     display: flex;
-    padding-left: 0;
     list-style: none;
 }
 
@@ -82,7 +60,7 @@ header .searchbar button:hover {
 
 .img.principal img {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1080px;
     height: auto;
     display: flex;
     margin: auto;
